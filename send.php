@@ -11,15 +11,17 @@
         <table border="1">
             <tr>
                 <th>お名前</th>
-                <td> <?php echo htmlspecialchars($_POST['name']); ?> </td>    
+                <td>鈴木太郎</td>    
             </tr>
             <tr>
                 <th>メールアドレス</th>
-                <td> <?php echo htmlspecialchars($_POST['email']); ?> </td>   
+                <td>taro@adjust.ne.jp</td>   
             </tr>   
             <tr>
                 <th>お問い合わせ内容</th>
-                <td> <?php echo preg_replace('/\n/','<br>', htmlspecialchars($_POST['message']) ); ?> </td>
+                <td>test<br>
+                test<br>
+                test</td>
             </tr>
         </table>
     </div>
