@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" action="confirm.php">
+    <table>
+        <tr>
+            <th>お名前</th>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <th>メールアドレス</th>
+            <td><input type="text" name="email">
+                <!--
+                異常なメールアドレスの入力を容易にするために
+                type="email" とせずあえて type="text" としています。
+                -->
+            </td>
+        </tr>   
+        <tr>
+            <th>お問い合わせ内容</th>
+            <td><textarea name="message" rows="5" cols="40"></textarea></td>   
+        </tr>
+    </table>
+    <div class="right">
+        <input type="submit" value="送信">
+    </div>
+</form>
+</body>
+</html>
